@@ -54,7 +54,7 @@ alpha = 0.5
 start = time.time()
 
 # This is where you train your model using your algorithm of choice
-resampled_algo = als.BiasedMF(20, iterations=10, method="lu")
+resampled_algo = als.ImplicitMF(20, iterations=10, method="lu")
 
 model_path = os.path.join(os.path.dirname(__file__), './model/')
 for i in range(numRepetition):
